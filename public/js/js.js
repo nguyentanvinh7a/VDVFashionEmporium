@@ -16,3 +16,16 @@ $(function() {
     });
 
 });
+
+myID = document.getElementById("sidebar");
+
+var myScrollFunc = function() {
+    var y = window.scrollY;
+    if (y > 0) {
+        myID.className = "addThis_listSharing hidden-xs is-show"
+    } else {
+        myID.className = "addThis_listSharing hidden-xs"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);

@@ -1,0 +1,100 @@
+.addThis_listSharing.is-show {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.addThis_listSharing {
+    position: fixed;
+    bottom: 85px;
+    z-index: 999;
+    right: -15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.addThis_listing .addThis_item {
+    margin-bottom: 5px;
+    margin-right: 24px;
+}
+
+.addThis_listing .addThis_item .addThis_item--icon {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.11);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.addThis_listing .addThis_item .addThis_item--icon .tooltip-text::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -ms-transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.addThis_listing .addThis_item .addThis_item--icon .tooltip-text {
+    position: absolute;
+    top: 4px;
+    right: 55px;
+    z-index: 9;
+    height: 32px;
+    line-height: 26px;
+    padding: 3px 10px;
+    width: auto;
+    border-radius: 5px;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    -ms-transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+ol,
+ul {
+    margin-bottom: 10px;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    border-style: none;
+}
