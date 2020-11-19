@@ -1,13 +1,12 @@
 var express = require('express');
 var router = express.Router();
-const newProductsModel = require('../models/newProductModel');
-const bestSellersModel = require('../models/bestSellerModel');
+const productsModel = require('../models/productModel');
 
-const newProducts = newProductsModel.list();
-const bestSellers = bestSellersModel.list();
+const products = productsModel.list();
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('home', {newProducts, bestSellers});
+  res.render('home', {products});
 });
 
 module.exports = router;

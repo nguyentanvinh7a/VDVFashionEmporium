@@ -3,14 +3,14 @@
 
     <!-- Jumbotron Header -->
     <header class="jumbotron my-4">
-        <a href="/collections"><img src="images/ms_banner_img1_vi.jpg" class="banner" /></a>
+        <a href="/products"><img src="/images/ms_banner_img1_vi.jpg" class="banner" /></a>
     </header>
 
     <!-- Page Features -->
     <span><h4>NEW PRODUCTS</h4></span>
     <div class="row text-center">
         <ul id="newProductModel" style="display: flex; flex-wrap: wrap">
-        {{#each newProducts}}
+        {{#each products}}
             <div class="col-lg-3 col-md-6 mb-4">
             <li>
                 <div class="card h-100">
@@ -20,7 +20,7 @@
                         <p class="card-text">{{price}}đ</p>
                     </div>
                     <div class="card-footer">
-                        <a href="product-detail" class="btn btn-primary">Find Out More!</a>
+                        <a href="/products/detail/{{id}}" class="btn btn-primary">Find Out More!</a>
                     </div>
                 </div>
             </li>
@@ -32,7 +32,7 @@
     <span><h4>BEST SELLERS</h4></span>
     <div class="row text-center">
         <ul id="newProductModel" style="display: flex; flex-wrap: wrap">
-            {{#each bestSellers}}
+            {{#each products}}
                 <div class="col-lg-3 col-md-6 mb-4">
                     <li>
                         <div class="card h-100">
@@ -42,7 +42,7 @@
                                 <p class="card-text">{{price}}đ</p>
                             </div>
                             <div class="card-footer">
-                                <a href="product-detail" class="btn btn-primary">Find Out More!</a>
+                                <a href="/products/detail/{{id}}" class="btn btn-primary">Find Out More!</a>
                             </div>
                         </div>
                     </li>
