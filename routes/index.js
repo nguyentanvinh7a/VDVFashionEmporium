@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const productsModel = require('../models/productModel');
+const productsModel = require('../models/mongoModels/productModel');
 
 //const products = productsModel.list();
 
