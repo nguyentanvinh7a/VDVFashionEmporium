@@ -22,10 +22,10 @@
     <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Thêm đường dẫn chi tiết sp động">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/productController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/productService.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/productService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/books/list.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/products/list.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/products/list.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +42,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/nguyentanvinh7a/web" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1kBVA28IsSlWSUKHtPUnhtYlgHd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -69,11 +76,11 @@
       <recent name="C:\Users\Vinh\Desktop\express-mvc\public\bootstrap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vinh\Desktop\MyStore\views\layout" />
       <recent name="C:\Users\Vinh\Desktop\MyStore\models\mongoModels" />
       <recent name="C:\Users\Vinh\Desktop\web\views\product" />
       <recent name="C:\Users\Vinh\Desktop\web\routes\product" />
       <recent name="C:\Users\Vinh\Desktop\web\views" />
-      <recent name="C:\Users\Vinh\Desktop\web\views\collections" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.www">
@@ -127,6 +134,7 @@
       <workItem from="1607239900230" duration="312000" />
       <workItem from="1607240226109" duration="10703000" />
       <workItem from="1607253971412" duration="1678000" />
+      <workItem from="1607257043532" duration="10831000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
