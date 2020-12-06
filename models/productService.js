@@ -8,7 +8,6 @@ exports.list = async (pageIndex, itemPerPage) => {
         .skip(pageIndex)
         .limit(itemPerPage)
         .toArray();
-    console.dir(products);
     return products;
 }
 exports.count = async () => {

@@ -5,6 +5,8 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const helpers = require('handlebars-helpers');
+const comparisonHelpers = helpers().comparison;
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -17,6 +19,9 @@ const app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+//app.set('helpers', comparisonHelpers);
+app.engine('hbs', helpers({helpers: comparisonHelpers})) ;
+
 const { MongoClient } = require("mongodb");
 
 app.use(logger('dev'));
