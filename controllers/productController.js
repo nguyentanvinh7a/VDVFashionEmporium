@@ -1,12 +1,14 @@
+const {ObjectId} = require('mongodb');
+
 const productService = require('../models/productService');
 const productsModel = require('../models/mongoModels/productModel')
-const ITEM_PER_PAGE = 3;
+const ITEM_PER_PAGE = 6;
 
 module.exports.index = async (req, res, next) => {
     const page = +req.query.page || 1;
+    const productId = req.query.productId;
     const totalProduct = await productService.count();
-    console.log(totalProduct);
-    const products = await productService.list(page, ITEM_PER_PAGE);
+    const products = await productService.list(productId ? {productId : ObjectId} : {}, page - 1, ITEM_PER_PAGE);
 
     // Get products from model
     //const products = await productService.list();

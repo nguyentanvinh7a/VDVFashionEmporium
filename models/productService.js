@@ -2,15 +2,20 @@ const {db} = require('../dal/db');
 const { ObjectId} = require('mongodb');
 const productMongo = require('./mongoModels/productModel');
 
-exports.list = async (pageIndex, itemPerPage) => {
-    const productsCollection = db().collection('cloth');
-    const products = await productsCollection.find({})
-        .skip(pageIndex)
-        .limit(itemPerPage)
-        .toArray();
-    return products;
-}
 exports.count = async () => {
     const productsCollection = db().collection('cloth');
     return productsCollection.find({}).count();
 }
+
+exports.list = async (filter, pageIndex, itemPerPage) => {
+    const productsCollection = db().collection('cloth');
+
+    const products = await productsCollection.find({typeProduct : filter.productId})
+        .skip(pageIndex * itemPerPage)
+        .limit(itemPerPage)
+        .toArray();
+
+    console.log(products);
+    return products;
+}
+
