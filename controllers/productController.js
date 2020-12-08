@@ -7,8 +7,14 @@ const ITEM_PER_PAGE = 6;
 module.exports.index = async(req, res, next) => {
     const page = +req.query.page || 1;
     const productId = req.query.productId;
+    const q = req.query.q;
     const totalProduct = await productService.count();
-    const products = await productService.list(productId ? { typeProduct: ObjectId(productId) } : {}, page - 1, ITEM_PER_PAGE);
+    const filter = {};
+    if (productId)
+        filter.typeProduct = ObjectId(productId);
+    if (q)
+        filter.nameProduct = new RegExp(q, 'i');
+    const products = await productService.list(filter, page - 1, ITEM_PER_PAGE);
     // Get products from model
     //const products = await productService.list();
     // Pass data to view to display list of products
@@ -22,6 +28,7 @@ module.exports.index = async(req, res, next) => {
         ITEM_PER_PAGE: ITEM_PER_PAGE,
         currentPage: page,
         productId: productId,
+        q: q,
     });
 
 };
