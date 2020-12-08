@@ -1,16 +1,16 @@
-const {db} = require('../dal/db');
-const { ObjectId} = require('mongodb');
+const { db } = require('../dal/db');
+const { ObjectId } = require('mongodb');
 const productMongo = require('./mongoModels/productModel');
 
-exports.count = async () => {
+exports.count = async() => {
     const productsCollection = db().collection('cloth');
     return productsCollection.find({}).count();
 }
 
-exports.list = async (filter, pageIndex, itemPerPage) => {
+exports.list = async(filter, pageIndex, itemPerPage) => {
     const productsCollection = db().collection('cloth');
 
-    const products = await productsCollection.find({typeProduct : filter.productId})
+    const products = await productsCollection.find(filter)
         .skip(pageIndex * itemPerPage)
         .limit(itemPerPage)
         .toArray();
@@ -18,4 +18,3 @@ exports.list = async (filter, pageIndex, itemPerPage) => {
     console.log(products);
     return products;
 }
-
