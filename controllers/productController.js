@@ -22,6 +22,7 @@ module.exports.index = async(req, res, next) => {
         lastPage: Math.ceil(totalProduct / ITEM_PER_PAGE),
         ITEM_PER_PAGE: ITEM_PER_PAGE,
         currentPage: page,
+        productId: productId,
     });
 
 };

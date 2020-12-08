@@ -15,6 +15,5 @@ exports.list = async(filter, pageIndex, itemPerPage) => {
         .limit(itemPerPage)
         .toArray();
 
-    console.log(products);
     return products;
 }
