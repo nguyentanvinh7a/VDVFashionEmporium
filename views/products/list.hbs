@@ -81,7 +81,8 @@
                     {{/each}}
                 </ul>
             </div>
-            {{#and q productId}}
+            {{#not q}}
+                {{#not productId}}
                 <ul class="pagination justify-content-center">
                     {{#isnt currentPage 1}}
                         <li class="page-item">
@@ -117,7 +118,8 @@
                         </li>
                     {{/gt}}
                 </ul>
-            {{/and}}
+                {{/not}}
+            {{/not}}
             {{#if productId}}
                 <ul class="pagination justify-content-center">
                     {{#isnt currentPage 1}}
