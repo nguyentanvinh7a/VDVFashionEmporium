@@ -1,12 +1,8 @@
-var express = require('express');
-var router = express.Router();
-const productsModel = require('../models/mongoModels/productModel');
-
-//const products = productsModel.list();
+const express = require('express');
+const router = express.Router();
+const productController = require('../controllers/productController');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('home', /*{products}*/);
-});
+router.get('/', productController.newProducts);
 
 module.exports = router;
