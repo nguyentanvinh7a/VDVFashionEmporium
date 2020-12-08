@@ -52,19 +52,19 @@
                     {{#each products}}
                         <div class="col-lg-4 col-md-6 mb-4">
                             <li>
-                                    <div class="card h-100">
-                                        <a href="/products/detail/{{_id}}"><img class="card-img-top" src={{imgSrc}} alt=""></a>
-                                        <div class="card-body">
-                                            <h4 class="card-title">
-                                                <a href="/products/detail/{{_id}}">{{nameProduct}}</a>
-                                            </h4>
-                                            <h5>{{price}}₫</h5>
-                                            <p class="card-text">{{productDescription}}</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                                        </div>
+                                <div class="card h-100">
+                                    <a href="/products/detail/{{_id}}"><img class="card-img-top" src={{imgSrc}} alt=""></a>
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <a href="/products/detail/{{_id}}">{{nameProduct}}</a>
+                                        </h4>
+                                        <h5>{{price}}₫</h5>
+                                        <p class="card-text">{{productDescription}}</p>
                                     </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                    </div>
+                                </div>
                             </li>
                         </div>
                     {{/each}}
@@ -145,7 +145,7 @@
             {{/if}}
 
         </div>
-            <!-- /.row -->
+        <!-- /.row -->
         <!-- /.col-lg-9 -->
 
     </div>

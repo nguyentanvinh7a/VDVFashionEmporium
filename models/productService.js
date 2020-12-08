@@ -17,3 +17,12 @@ exports.list = async(filter, pageIndex, itemPerPage) => {
 
     return products;
 }
+
+exports.listNewProducts = async (totalProduct) => {
+    const productsCollection = db().collection('cloth');
+    const products = await productsCollection.find({})
+        .skip(totalProduct - 8)
+        .limit(8)
+        .toArray();
+    return products;
+}

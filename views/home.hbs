@@ -13,41 +13,23 @@
         {{#each products}}
             <div class="col-lg-3 col-md-6 mb-4">
             <li>
-                <div class="card h-100">
-                    <img class="card-img-top" src={{img}} alt="">
+                <div class="card h-100" >
+                    <a href="/products/detail/{{_id}}">
+                        <img class="card-img-top" src={{imgSrc}} alt="">
+                    </a>
                     <div class="card-body">
-                        <h4 class="card-title">{{nameProduct}}</h4>
-                        <p class="card-text">{{price}}đ</p>
+                        <a href="/products/detail/{{_id}}">
+                            <h4 class="card-title">{{nameProduct}}</h4>
+                        </a>
+                    <p class="card-text">{{price}}đ</p>
                     </div>
                     <div class="card-footer">
-                        <a href="/products/detail/{{id}}" class="btn btn-primary">Find Out More!</a>
+                        <a href="/products/detail/{{_id}}" class="btn btn-primary">Find Out More!</a>
                     </div>
                 </div>
             </li>
             </div>
         {{/each}}
-        </ul>
-    </div>
-
-    <span><h4>BEST SELLERS</h4></span>
-    <div class="row text-center">
-        <ul id="newProductModel" style="display: flex; flex-wrap: wrap">
-            {{#each products}}
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <li>
-                        <div class="card h-100">
-                            <img class="card-img-top" src={{img}} alt="">
-                            <div class="card-body">
-                                <h4 class="card-title">{{nameProduct}}</h4>
-                                <p class="card-text">{{price}}đ</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="/products/detail/{{id}}" class="btn btn-primary">Find Out More!</a>
-                            </div>
-                        </div>
-                    </li>
-                </div>
-            {{/each}}
         </ul>
     </div>
     <!-- /.row -->
