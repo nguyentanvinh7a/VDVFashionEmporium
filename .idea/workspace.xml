@@ -19,14 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Thêm đường dẫn chi tiết sp động">
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/mongoModels/userModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/userService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/passport/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/products/detail.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/products/detail.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/products/list.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/products/list.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/productService.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/productService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,43 +70,45 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="DotEnv" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vinh\Desktop\MyStore\models" />
       <recent name="C:\Users\Vinh\Desktop\web\views" />
       <recent name="C:\Users\Vinh\Desktop\express-mvc\public\stylesheets" />
       <recent name="C:\Users\Vinh\Desktop\express-mvc\public" />
       <recent name="C:\Users\Vinh\Desktop\express-mvc\public\bootstrap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vinh\Desktop\MyStore\models" />
       <recent name="C:\Users\Vinh\Desktop\MyStore\views\layout" />
       <recent name="C:\Users\Vinh\Desktop\MyStore\models\mongoModels" />
       <recent name="C:\Users\Vinh\Desktop\web\views\product" />
       <recent name="C:\Users\Vinh\Desktop\web\routes\product" />
-      <recent name="C:\Users\Vinh\Desktop\web\views" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.www">
-    <configuration name="users.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/routes/users.js" working-dir="$PROJECT_DIR$/routes">
+    <configuration name="register.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/routes/register.js" working-dir="$PROJECT_DIR$/routes">
       <method v="2" />
     </configuration>
     <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="www" working-dir="$PROJECT_DIR$/bin">
       <envs>
         <env name="PORT" value="5000" />
+        <env name="SESSION_SECRET" value="'scret-cat'" />
       </envs>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.users.js" />
       <item itemvalue="Node.js.www" />
+      <item itemvalue="Node.js.register.js" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.www" />
-        <item itemvalue="Node.js.users.js" />
+        <item itemvalue="Node.js.register.js" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +154,11 @@
       <workItem from="1608972265304" duration="4961000" />
       <workItem from="1608980241104" duration="13694000" />
       <workItem from="1609049212441" duration="1206000" />
-      <workItem from="1609327963824" duration="1083000" />
+      <workItem from="1609327963824" duration="2627000" />
+      <workItem from="1609335318651" duration="741000" />
+      <workItem from="1609420788162" duration="102000" />
+      <workItem from="1609421163592" duration="7821000" />
+      <workItem from="1609434571080" duration="8970000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -155,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605806036095</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Thêm nguồn ảnh vào 2 dấu &quot;&quot;">
+      <created>1609329072973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609329072973</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,30 +195,35 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Thêm đường dẫn chi tiết sp động" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thêm đường dẫn chi tiết sp động" />
+    <MESSAGE value="Thêm nguồn ảnh vào 2 dấu &quot;&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thêm nguồn ảnh vào 2 dấu &quot;&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/models/productService.js</url>
+          <url>file://$PROJECT_DIR$/passport/index.js</url>
+          <line>10</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/passport/index.js</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/models/userService.js</url>
+          <line>11</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/models/userService.js</url>
           <line>12</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/models/productService.js</url>
-          <line>13</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/models/productService.js</url>
-          <line>14</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/models/productService.js</url>
-          <line>15</line>
-          <option name="timeStamp" value="5" />
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -3,10 +3,13 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const session = require('express-session');
 
+const passport = require("./passport/index");
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const usersRouter = require('./routes/register');
 const loginRouter = require('./routes/login');
+const registerRouter = require('./routes/register');
 const productListRouter = require('./routes/products/list');
 const productDetailRouter = require('./routes/products/detail');
 const handlebarhelpers = require('handlebars-helpers')();
@@ -31,11 +34,18 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//Passport midleware
+app.use(session({ secret: process.env.SESSION_SECRET }));
+app.use(passport.initialize());
+app.use(passport.session());
+
+//Routes
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/login',loginRouter);
 app.use('/products/', productListRouter);
 app.use('/products/detail', productDetailRouter);
+app.use('/register', registerRouter);
 
 require('./dal/db');
 // catch 404 and forward to error handler
