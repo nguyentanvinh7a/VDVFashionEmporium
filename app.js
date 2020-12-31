@@ -35,7 +35,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Passport midleware
-app.use(session({ secret: process.env.SESSION_SECRET }));
+app.use(session({ secret: 'test' }));
 app.use(passport.initialize());
 app.use(passport.session());
 
