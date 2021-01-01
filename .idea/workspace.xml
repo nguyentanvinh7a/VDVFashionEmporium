@@ -22,9 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Fix PORT error">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Fix PORT part 2">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +72,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="DotEnv" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
+    <property name="node.js.detected.package.ember-template-lint" value="true" />
+    <property name="node.js.path.for.package.ember-template-lint" value="project" />
+    <property name="node.js.selected.package.ember-template-lint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -96,6 +100,9 @@
       <method v="2" />
     </configuration>
     <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="www" working-dir="$PROJECT_DIR$/bin">
+      <envs>
+        <env name="PORT" value="" />
+      </envs>
       <method v="2" />
     </configuration>
     <list>
@@ -157,7 +164,9 @@
       <workItem from="1609421163592" duration="7821000" />
       <workItem from="1609434571080" duration="8970000" />
       <workItem from="1609443991542" duration="1572000" />
-      <workItem from="1609487462815" duration="2893000" />
+      <workItem from="1609487462815" duration="3202000" />
+      <workItem from="1609491106168" duration="113000" />
+      <workItem from="1609491337966" duration="391000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -201,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609490444117</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fix PORT part 2">
+      <created>1609490788878</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609490788878</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +243,8 @@
     <MESSAGE value="Delete nodemoon" />
     <MESSAGE value="Fix favicon 404" />
     <MESSAGE value="Fix PORT error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix PORT error" />
+    <MESSAGE value="Fix PORT part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix PORT part 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -241,16 +258,6 @@
           <url>file://$PROJECT_DIR$/passport/index.js</url>
           <line>8</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/models/userService.js</url>
-          <line>11</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/models/userService.js</url>
-          <line>12</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
