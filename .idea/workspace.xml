@@ -22,8 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Update env">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Delete nodemoon">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +160,8 @@
       <workItem from="1609420788162" duration="102000" />
       <workItem from="1609421163592" duration="7821000" />
       <workItem from="1609434571080" duration="8970000" />
-      <workItem from="1609443991542" duration="1210000" />
+      <workItem from="1609443991542" duration="1572000" />
+      <workItem from="1609487462815" duration="1444000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -182,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609445012823</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Delete nodemoon">
+      <created>1609445219965</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609445219965</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +214,8 @@
     <MESSAGE value="Thêm đường dẫn chi tiết sp động" />
     <MESSAGE value="Thêm nguồn ảnh vào 2 dấu &quot;&quot;" />
     <MESSAGE value="Update env" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update env" />
+    <MESSAGE value="Delete nodemoon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete nodemoon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
