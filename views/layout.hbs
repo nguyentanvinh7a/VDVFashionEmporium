@@ -60,9 +60,23 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
+                {{#if user}}
+                <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false" href="#">Hello {{user.username}}</a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">My categary</a>
+                            <a class="dropdown-item" href="#">My bill</a>
+                            <a class="dropdown-item" href="/logout">Logout</a>
+                        </div>
+                    </li>
+                </li>
+                {{else}}
                 <li class="nav-item">
                     <a class="nav-link" href="/login">Login</a>
                 </li>
+                {{/if}}
             </ul>
         </div>
     </div>

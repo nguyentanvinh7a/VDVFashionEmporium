@@ -22,7 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="reinstall bcryptjs">
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Fix favicon">
+      <change afterPath="$PROJECT_DIR$/routes/logout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/mongoModels/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/mongoModels/userModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passport/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/passport/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +172,7 @@
       <workItem from="1609491337966" duration="1514000" />
       <workItem from="1609493049712" duration="252000" />
       <workItem from="1609493322387" duration="371000" />
-      <workItem from="1609495166839" duration="1099000" />
+      <workItem from="1609495166839" duration="11134000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -264,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609496139030</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fix favicon">
+      <created>1609496289856</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1609496289856</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,12 +307,12 @@
     <MESSAGE value="Fix PORT error" />
     <MESSAGE value="Fix PORT part 2" />
     <MESSAGE value="Fix PORT part 3" />
-    <MESSAGE value="Fix favicon" />
     <MESSAGE value="Fix PORT part 5" />
     <MESSAGE value="heroku restart" />
     <MESSAGE value="add bcryptjs" />
     <MESSAGE value="reinstall bcryptjs" />
-    <option name="LAST_COMMIT_MESSAGE" value="reinstall bcryptjs" />
+    <MESSAGE value="Fix favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix favicon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -311,6 +326,54 @@
           <url>file://$PROJECT_DIR$/passport/index.js</url>
           <line>8</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/passport/index.js</url>
+          <line>19</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/passport/index.js</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/passport/index.js</url>
+          <line>20</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/passport/index.js</url>
+          <line>6</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/models/userService.js</url>
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/models/mongoModels/userModel.js</url>
+          <line>20</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/models/mongoModels/userModel.js</url>
+          <line>19</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/models/mongoModels/userModel.js</url>
+          <line>21</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

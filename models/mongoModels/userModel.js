@@ -17,7 +17,7 @@ exports.add = async(user) => {
     return f;
 }
 exports.get = async (id) => {
-    const productsCollection = db().collection('cloth');
-    const product = await productsCollection.findOne({_id: ObjectId(id)});
-    return product;
+    const usersCollection = db().collection('user');
+    const user = await usersCollection.findOne({_id: ObjectId(id)});
+    return user;
 }

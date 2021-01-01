@@ -10,6 +10,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/register');
 const loginRouter = require('./routes/login');
 const registerRouter = require('./routes/register');
+const logoutRouter = require('./routes/logout');
 const productListRouter = require('./routes/products/list');
 const productDetailRouter = require('./routes/products/detail');
 const handlebarhelpers = require('handlebars-helpers')();
@@ -38,6 +39,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({ secret: 'test' }));
 app.use(passport.initialize());
 app.use(passport.session());
+//Pass req.user to res.locals
+
+app.use(function (req, res, next) {
+    res.locals.user = req.user
+    next()
+})
 
 //Routes
 app.use('/', indexRouter);
@@ -46,6 +53,7 @@ app.use('/login',loginRouter);
 app.use('/products/', productListRouter);
 app.use('/products/detail', productDetailRouter);
 app.use('/register', registerRouter);
+app.use('/logout', logoutRouter);
 
 require('./dal/db');
 // catch 404 and forward to error handler

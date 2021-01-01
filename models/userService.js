@@ -15,7 +15,7 @@ exports.addUser = async (newUser)=>{
                 status: "active",
             });
             user
-//                .save()
+                .save()
                 .then((doc)=>{})
                 .then((err)=>{
                     console.log(err);
@@ -37,6 +37,5 @@ exports.checkCredential = async (username, password)=>{
 }
 
 exports.getUser = (id)=>{
-    const usersCollection = db().collection('user');
-    return usersCollection.findOne({_id: id});
+    return userMongoModel.get(id);
 }
