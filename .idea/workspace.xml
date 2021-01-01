@@ -22,9 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Fix favicon 404">
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Fix PORT error">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +157,7 @@
       <workItem from="1609421163592" duration="7821000" />
       <workItem from="1609434571080" duration="8970000" />
       <workItem from="1609443991542" duration="1572000" />
-      <workItem from="1609487462815" duration="2537000" />
+      <workItem from="1609487462815" duration="2893000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609488965338</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix PORT error">
+      <created>1609490444116</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609490444117</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +226,8 @@
     <MESSAGE value="Update env" />
     <MESSAGE value="Delete nodemoon" />
     <MESSAGE value="Fix favicon 404" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix favicon 404" />
+    <MESSAGE value="Fix PORT error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix PORT error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
