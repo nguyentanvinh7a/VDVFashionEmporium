@@ -22,7 +22,6 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "bcrypt": "^5.0.0",
-    "nodemon": "^2.0.6"
+    "bcrypt": "^5.0.0"
   }
 }

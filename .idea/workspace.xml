@@ -22,7 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Fix PORT part 3">
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Fix favicon">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,9 +101,6 @@
       <method v="2" />
     </configuration>
     <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="www" working-dir="$PROJECT_DIR$/bin">
-      <envs>
-        <env name="PORT" value="" />
-      </envs>
       <method v="2" />
     </configuration>
     <list>
@@ -164,7 +164,8 @@
       <workItem from="1609443991542" duration="1572000" />
       <workItem from="1609487462815" duration="3202000" />
       <workItem from="1609491106168" duration="113000" />
-      <workItem from="1609491337966" duration="635000" />
+      <workItem from="1609491337966" duration="1514000" />
+      <workItem from="1609493049712" duration="252000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -222,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609491758805</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fix favicon">
+      <created>1609492007779</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609492007779</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +258,8 @@
     <MESSAGE value="Fix PORT error" />
     <MESSAGE value="Fix PORT part 2" />
     <MESSAGE value="Fix PORT part 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix PORT part 3" />
+    <MESSAGE value="Fix favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix favicon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
