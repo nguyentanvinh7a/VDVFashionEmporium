@@ -22,12 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Fix favicon">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
-    </list>
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Fix favicon" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,6 +161,7 @@
       <workItem from="1609491106168" duration="113000" />
       <workItem from="1609491337966" duration="1514000" />
       <workItem from="1609493049712" duration="252000" />
+      <workItem from="1609493322387" duration="371000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -230,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609492007779</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fix favicon">
+      <created>1609493388894</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609493388894</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
