@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="heroku restart" />
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="reinstall bcryptjs">
+      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,7 +164,7 @@
       <workItem from="1609491337966" duration="1514000" />
       <workItem from="1609493049712" duration="252000" />
       <workItem from="1609493322387" duration="371000" />
-      <workItem from="1609495166839" duration="835000" />
+      <workItem from="1609495166839" duration="1099000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -248,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609495848044</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add bcryptjs">
+      <created>1609496017924</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1609496017924</updated>
+    </task>
+    <task id="LOCAL-00014" summary="reinstall bcryptjs">
+      <created>1609496139029</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1609496139030</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +295,9 @@
     <MESSAGE value="Fix favicon" />
     <MESSAGE value="Fix PORT part 5" />
     <MESSAGE value="heroku restart" />
-    <option name="LAST_COMMIT_MESSAGE" value="heroku restart" />
+    <MESSAGE value="add bcryptjs" />
+    <MESSAGE value="reinstall bcryptjs" />
+    <option name="LAST_COMMIT_MESSAGE" value="reinstall bcryptjs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
