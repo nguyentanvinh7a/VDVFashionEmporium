@@ -15,7 +15,7 @@ exports.addUser = async (newUser)=>{
                 status: "active",
             });
             user
-                .save()
+//                .save()
                 .then((doc)=>{})
                 .then((err)=>{
                     console.log(err);
