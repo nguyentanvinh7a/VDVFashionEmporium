@@ -21,11 +21,11 @@
         <div class="col-lg-9">
 
             <div class="card mt-4">
-                <img class="card-img-top img-fluid" src="{{imgSrc}}" alt="">
+                <img class="card-img-top img-fluid" src="{{product.imgSrc}}" alt="">
                 <div class="card-body">
-                    <h3 class="card-title">{{nameProduct}}</h3>
-                    <h4>{{price}}</h4>
-                    <p class="card-text">{{productDescription}}</p>
+                    <h3 class="card-title">{{product.nameProduct}}</h3>
+                    <h4>{{product.price}}</h4>
+                    <p class="card-text">{{product.productDescription}}</p>
                     <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
                     4.0 stars
                 </div>
@@ -37,16 +37,43 @@
                     Product Reviews
                 </div>
                 <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
-                    <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+                    {{#each reviews}}
+                    <p>{{review}}</p>
+                    <small class="text-muted">Posted by {{name}} on 3/1/17</small>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
-                    <small class="text-muted">Posted by Anonymous on 3/1/17</small>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
-                    <small class="text-muted">Posted by Anonymous on 3/1/17</small>
-                    <hr>
-                    <a href="#" class="btn btn-success">Leave a Review</a>
+                       {{/each}}
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Leave a review</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">New review</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="/products/detail/{{product._id}}/" method="post">
+                                            {{#unless user}}
+                                            <div class="form-group">
+                                                <label for="name" class="col-form-label">Name:</label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            {{/unless}}
+                                            <div class="form-group">
+                                                <label for="review" class="col-form-label">Review:</label>
+                                                <input type="text" class="form-control" id="review" name="review" value="">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <input type="submit" class="btn btn-primary" value="Send review">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
             <!-- /.card -->

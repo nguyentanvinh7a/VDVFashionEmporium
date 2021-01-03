@@ -34,11 +34,27 @@ module.exports.index = async(req, res, next) => {
 };
 
 module.exports.detail = async(req, res, next) => {
-    res.render('products/detail', await productsModel.get(req.params.id));
+    const product = await productsModel.get(req.params.id);
+    const reviews = await productsModel.listReview(req.params.id);
+    res.render('products/detail', {product: product, reviews: reviews});
 }
 
 module.exports.newProducts = async (req, res, next) => {
     const totalProduct = await productService.count();
     const newProducts = await productService.listNewProducts(totalProduct);
     res.render('home', {products: newProducts});
+}
+
+module.exports.addReview = async (req, res, next) => {
+    const {name, review} = req.body;
+    let product = req.params.id;
+    const newReview = {
+        name,
+        review,
+        product
+    };
+    await productsModel.addReview(newReview);
+    product = await productsModel.get(req.params.id);
+    const reviews = await productsModel.listReview(req.params.id);
+    res.render('products/detail', {product: product, reviews: reviews});
 }
