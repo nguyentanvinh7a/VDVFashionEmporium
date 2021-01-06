@@ -22,12 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Fix register">
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Add review without login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/productController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/mongoModels/productModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/mongoModels/productModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/products/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/products/detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/products/detail.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/products/detail.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +73,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="DotEnv" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.ember-template-lint" value="true" />
     <property name="node.js.path.for.package.ember-template-lint" value="project" />
     <property name="node.js.selected.package.ember-template-lint" value="" />
@@ -172,7 +171,8 @@
       <workItem from="1609495166839" duration="13623000" />
       <workItem from="1609586188253" duration="600000" />
       <workItem from="1609670022521" duration="4286000" />
-      <workItem from="1609690903753" duration="7522000" />
+      <workItem from="1609690903753" duration="7790000" />
+      <workItem from="1609923161948" duration="5463000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -300,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609519639352</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add review without login">
+      <created>1609698600934</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1609698600934</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,70 +343,39 @@
     <MESSAGE value="Add login and logout" />
     <MESSAGE value="Fix server app" />
     <MESSAGE value="Fix register" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix register" />
+    <MESSAGE value="Add review without login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add review without login" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/controllers/productController.js</url>
-          <line>48</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="24" />
+          <url>file://$PROJECT_DIR$/models/mongoModels/productModel.js</url>
+          <line>27</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/models/mongoModels/productModel.js</url>
+          <line>28</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controllers/productController.js</url>
-          <line>49</line>
+          <line>59</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="25" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controllers/productController.js</url>
-          <line>50</line>
+          <line>58</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/controllers/productController.js</url>
-          <line>51</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="27" />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controllers/productController.js</url>
           <line>52</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/controllers/productController.js</url>
-          <line>53</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/controllers/productController.js</url>
-          <line>54</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/models/mongoModels/productModel.js</url>
-          <line>25</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/models/mongoModels/productModel.js</url>
-          <line>26</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/models/mongoModels/productModel.js</url>
-          <line>27</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="33" />
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

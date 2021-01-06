@@ -46,14 +46,24 @@ module.exports.newProducts = async (req, res, next) => {
 }
 
 module.exports.addReview = async (req, res, next) => {
-    const {name, review} = req.body;
     let product = req.params.id;
-    const newReview = {
-        name,
-        review,
-        product
-    };
-    await productsModel.addReview(newReview);
+    const review = req.body.review;
+    if(req.user){
+        const name = req.user.username;
+        const newReview = {
+            name,
+            review,
+            product
+        };
+        await productsModel.addReview(newReview);}
+    else{
+        const name = req.body.name;
+        const newReview = {
+            name,
+            review,
+            product
+        };
+        await productsModel.addReview(newReview);};
     product = await productsModel.get(req.params.id);
     const reviews = await productsModel.listReview(req.params.id);
     res.render('products/detail', {product: product, reviews: reviews});

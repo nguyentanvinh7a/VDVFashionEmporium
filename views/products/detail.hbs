@@ -39,7 +39,7 @@
                 <div class="card-body">
                     {{#each reviews}}
                     <p>{{review}}</p>
-                    <small class="text-muted">Posted by {{name}} on 3/1/17</small>
+                    <small class="text-muted">Posted by {{name}}</small>
                     <hr>
                        {{/each}}
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Leave a review</button>
@@ -54,12 +54,17 @@
                                     </div>
                                     <div class="modal-body">
                                         <form action="/products/detail/{{product._id}}/" method="post">
-                                            {{#unless user}}
+                                            {{#if user}}
                                             <div class="form-group">
                                                 <label for="name" class="col-form-label">Name:</label>
-                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                                <input disabled type="text" class="form-control" id="name" name="name" value="{{user.username}}" >
                                             </div>
-                                            {{/unless}}
+                                            {{else}}
+                                                <div class="form-group">
+                                                    <label for="name" class="col-form-label">Name:</label>
+                                                    <input type="text" class="form-control" id="name" name="name" value="">
+                                                </div>
+                                            {{/if}}
                                             <div class="form-group">
                                                 <label for="review" class="col-form-label">Review:</label>
                                                 <input type="text" class="form-control" id="review" name="review" value="">

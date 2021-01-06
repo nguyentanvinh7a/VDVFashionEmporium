@@ -14,7 +14,7 @@ const logoutRouter = require('./routes/logout');
 const productListRouter = require('./routes/products/list');
 const productDetailRouter = require('./routes/products/detail');
 const handlebarhelpers = require('handlebars-helpers')();
-const exphbs  = require('express-handlebars');
+const exphbs = require('express-handlebars');
 
 const app = express();
 
