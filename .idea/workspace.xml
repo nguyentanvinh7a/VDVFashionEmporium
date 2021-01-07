@@ -22,16 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Add pagination for list review">
-      <change afterPath="$PROJECT_DIR$/controllers/cartController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/mongoModels/cartModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/cart.hbs" afterDir="false" />
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="MVC and front-end for cart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/cartController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/cartController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/mongoModels/cartModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/mongoModels/cartModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +77,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="DotEnv" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../admin" />
     <property name="node.js.detected.package.ember-template-lint" value="true" />
     <property name="node.js.path.for.package.ember-template-lint" value="project" />
     <property name="node.js.selected.package.ember-template-lint" value="" />
@@ -182,7 +181,7 @@
       <workItem from="1609947328361" duration="4939000" />
       <workItem from="1609956784007" duration="84000" />
       <workItem from="1609956888003" duration="1869000" />
-      <workItem from="1609995974977" duration="17256000" />
+      <workItem from="1609995974977" duration="45260000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -331,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609948654118</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="MVC and front-end for cart">
+      <created>1610021173374</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1610021173374</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +376,8 @@
     <MESSAGE value="Add review without login" />
     <MESSAGE value="Add review with logined user" />
     <MESSAGE value="Add pagination for list review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add pagination for list review" />
+    <MESSAGE value="MVC and front-end for cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVC and front-end for cart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -387,27 +394,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/models/mongoModels/cartModel.js</url>
-          <line>4</line>
+          <line>28</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="34" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/models/mongoModels/cartModel.js</url>
-          <line>5</line>
+          <line>26</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/controllers/cartController.js</url>
-          <line>6</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/controllers/cartController.js</url>
-          <line>24</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="38" />
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

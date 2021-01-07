@@ -6,6 +6,18 @@ const logger = require('morgan');
 const session = require('express-session');
 
 const passport = require("./passport/index");
+const MongoDBStore = require('connect-mongodb-session')(session)
+let store = new MongoDBStore({
+    uri: 'mongodb+srv://nguyentanvinh7a:01685698193@cluster0.ebrk4.mongodb.net/test',
+    databaseName: 'store',
+    collection: 'session',
+    function(error) {
+        // Should have gotten an error
+    }});
+
+store.on('error', function(error) {
+    // Also get an error here
+});
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/register');
 const loginRouter = require('./routes/login');
@@ -37,11 +49,17 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Passport midleware
-app.use(session({ secret: 'test' }));
+app.use(session({ secret: 'test',
+    cookie: { maxAge: 1000 * 60 * 60 * 24 * 7 },
+    store: store,
+    resave: true,
+    saveUninitialized: true
+}));
+
 app.use(passport.initialize());
 app.use(passport.session());
-//Pass req.user to res.locals
 
+//Pass req.user to res.locals
 app.use(function (req, res, next) {
     res.locals.user = req.user
     next()
@@ -58,6 +76,7 @@ app.use('/logout', logoutRouter);
 app.use('/cart', cartRouter);
 
 require('./dal/db');
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

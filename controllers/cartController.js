@@ -4,8 +4,11 @@ const cartModel = require('../models/mongoModels/cartModel');
 const productModel = require('../models/mongoModels/productModel');
 
 module.exports.index = async(req, res, next) => {
-    const listProducts = await cartModel.get(ObjectId(req.params.id));
-    const numberOfListProducts = await cartModel.count(ObjectId(req.params.id));
+    let listProducts = await cartModel.getByUser(ObjectId(req.params.id));
+    let numberOfListProducts = await cartModel.countByUser(ObjectId(req.params.id));
+    if (listProducts.length == 0){
+    listProducts =  await cartModel.getBySession(req.sessionID);
+    numberOfListProducts = await cartModel.countBySession(req.sessionID);}
     let i = 0;
     let listDetailProduct = [];
     let totalPrice = 0;
@@ -24,3 +27,16 @@ module.exports.index = async(req, res, next) => {
     }
     res.render('cart', {products: listDetailProduct, totalPrice: totalPrice});
 };
+
+module.exports.addToCart = async function(req, res, next){
+    const productId = ObjectId(req.params.productId);
+    const sessionId = req.sessionID;
+
+    if(!sessionId){
+        res.redirect('/products');
+        return;
+    }
+    await cartModel.addSession(sessionId, productId);
+    res.redirect('/cart');
+}
+
