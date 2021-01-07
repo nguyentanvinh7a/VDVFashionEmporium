@@ -13,6 +13,7 @@ const registerRouter = require('./routes/register');
 const logoutRouter = require('./routes/logout');
 const productListRouter = require('./routes/products/list');
 const productDetailRouter = require('./routes/products/detail');
+const cartRouter = require('./routes/cart');
 const handlebarhelpers = require('handlebars-helpers')();
 const exphbs = require('express-handlebars');
 
@@ -54,6 +55,7 @@ app.use('/products/', productListRouter);
 app.use('/products/detail', productDetailRouter);
 app.use('/register', registerRouter);
 app.use('/logout', logoutRouter);
+app.use('/cart', cartRouter);
 
 require('./dal/db');
 // catch 404 and forward to error handler
