@@ -25,6 +25,7 @@ exports.addUser = async (newUser)=>{
     });
     return;
 };
+
 //Check for valid username and password. Return user info if valid
 exports.checkCredential = async (username, password)=>{
     const usersCollection = db().collection('user');
@@ -38,4 +39,16 @@ exports.checkCredential = async (username, password)=>{
 
 exports.getUser = (id)=>{
     return userMongoModel.get(id);
+}
+//Check exist username
+exports.checkExistUser = async (username) =>{
+    const usersCollection = db().collection('user');
+    const user = await usersCollection.find({username: username}).toArray();
+    if(Array.isArray(user) && user.length)
+        return true;
+    return false;
+}
+//Check password and confirm password. Return false if equal
+exports.comparePasswordAndConfirmPassword = async (password, confirmPassword) =>{
+    return password.localeCompare(confirmPassword);
 }

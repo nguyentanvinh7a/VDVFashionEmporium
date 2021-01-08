@@ -16,6 +16,7 @@ exports.add = async(user) => {
     }
     return f;
 }
+
 exports.get = async (id) => {
     const usersCollection = db().collection('user');
     const user = await usersCollection.findOne({_id: ObjectId(id)});
