@@ -52,3 +52,15 @@ module.exports.deleteFromCart = async function(req, res, next){
     res.redirect('/cart');
 }
 
+module.exports.updateNumberOfProduct = async function(req, res, next){
+    const productId = ObjectId(req.params.productId);
+    const sessionId = req.sessionID;
+    const number = req.body.number;
+    if(!sessionId){
+        res.redirect('/products');
+        return;
+    }
+    await cartModel.updateSession(sessionId, productId, number);
+    res.redirect('/cart');
+}
+

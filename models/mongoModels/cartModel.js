@@ -47,3 +47,12 @@ exports.deleteSession = async (sessionId, productId) => {
         await cartCollection.deleteOne({session: sessionId, cloth: productId});
     }
 }
+
+exports.updateSession = async (sessionId, productId, number) => {
+    const cartCollection = db().collection('cart');
+    const cart = await cartCollection.find({session: sessionId, cloth: productId}).toArray();
+    if (Array.isArray(cart) && cart.length) {
+        await db().collection('cart').updateOne({session: sessionId, cloth: productId}, {$set: {
+            number: number,
+        }})}
+    }
