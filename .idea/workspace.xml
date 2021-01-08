@@ -24,14 +24,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="MVC and front-end for cart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/cartController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/cartController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/mongoModels/cartModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/mongoModels/cartModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/cart.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/cart.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/products/detail.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/products/detail.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/products/list.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/products/list.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +179,8 @@
       <workItem from="1609947328361" duration="4939000" />
       <workItem from="1609956784007" duration="84000" />
       <workItem from="1609956888003" duration="1869000" />
-      <workItem from="1609995974977" duration="45260000" />
+      <workItem from="1609995974977" duration="46512000" />
+      <workItem from="1610085468743" duration="4988000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -394,15 +393,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/models/mongoModels/cartModel.js</url>
-          <line>28</line>
+          <line>42</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="49" />
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/models/mongoModels/cartModel.js</url>
-          <line>26</line>
+          <line>48</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="50" />
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

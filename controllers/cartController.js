@@ -40,3 +40,15 @@ module.exports.addToCart = async function(req, res, next){
     res.redirect('/cart');
 }
 
+module.exports.deleteFromCart = async function(req, res, next){
+    const productId = ObjectId(req.params.productId);
+    const sessionId = req.sessionID;
+
+    if(!sessionId){
+        res.redirect('/products');
+        return;
+    }
+    await cartModel.deleteSession(sessionId, productId);
+    res.redirect('/cart');
+}
+
