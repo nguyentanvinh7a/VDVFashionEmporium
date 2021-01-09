@@ -19,7 +19,7 @@ store.on('error', function(error) {
     // Also get an error here
 });
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/register');
+const userRouter = require('./routes/user');
 const loginRouter = require('./routes/login');
 const registerRouter = require('./routes/register');
 const logoutRouter = require('./routes/logout');
@@ -67,7 +67,7 @@ app.use(function (req, res, next) {
 
 //Routes
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/user', userRouter);
 app.use('/login',loginRouter);
 app.use('/products/', productListRouter);
 app.use('/products/detail', productDetailRouter);

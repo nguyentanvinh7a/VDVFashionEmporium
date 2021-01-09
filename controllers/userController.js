@@ -1,4 +1,5 @@
 const userService = require("../models/userService");
+const userModel = require("../models/mongoModels/userModel")
 
 exports.addUser = async (req, res) => {
     const {username, email, password} = req.body;
@@ -35,4 +36,16 @@ exports.addUser = async (req, res) => {
         });
     return;
     }}
+}
+
+exports.index = async (req, res, next) => {
+    const user = await userModel.getUserByUsername(req.user.username);
+    res.render('user',{user: user});
+}
+
+exports.editUser = async (req, res, next) => {
+    let user = req.body;
+    const username = req.user.username;
+    await userModel.edit(username, user)
+    res.redirect('/user/');
 }
