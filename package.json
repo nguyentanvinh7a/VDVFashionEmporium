@@ -28,5 +28,17 @@
     "passport-local": "^1.0.0",
     "shortid": "^2.2.16"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyentanvinh7a/web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyentanvinh7a/web/issues"
+  },
+  "homepage": "https://github.com/nguyentanvinh7a/web#readme"
 }
