@@ -1,3 +1,8 @@
+const formidable = require('formidable');
+const fs = require('fs');
+const sharp = require('sharp');
+const cloudinary = require('cloudinary').v2;
+
 const userService = require("../models/userService");
 const userModel = require("../models/mongoModels/userModel")
 
@@ -43,9 +48,24 @@ exports.index = async (req, res, next) => {
     res.render('user',{user: user});
 }
 
-exports.editUser = async (req, res, next) => {
-    let user = req.body;
-    const username = req.user.username;
-    await userModel.edit(username, user)
-    res.redirect('/user/');
+exports.editUser = (req, res, next) => {
+    const form = formidable({ multiples: true });
+    form.parse(req, (err, fields, files) => {
+        if (err) {
+            next(err);
+            return;
+        }
+        const avatar = files.avatar;
+        if(avatar && avatar.size > 0) {
+            cloudinary.uploader.upload(avatar.path, (error, result ) => {
+                fields.avatar = result.secure_url;
+            })
+                .then(() => {userModel.edit(req.user.username, fields).then(res.redirect('/user/'))})
+        }
+        else {
+            userModel.edit(req.user.username, fields).then(() => {
+                res.redirect('/user/')
+            });
+        }
+    });
 }

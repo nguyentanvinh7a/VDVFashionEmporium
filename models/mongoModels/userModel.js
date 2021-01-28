@@ -30,6 +30,7 @@ exports.getUserByUsername = async (username) => {
 }
 
 exports.edit = async (username, user) => {
+    if(user.avatar){
     await db().collection('user').updateOne({ username: username }, {
         $set: {
             name: user.name,
@@ -37,7 +38,20 @@ exports.edit = async (username, user) => {
             phoneNumber: user.phoneNumber,
             province: user.province,
             district: user.district,
-            street: user.street
+            street: user.street,
+            avatar: user.avatar
         }
-    });
+    });}
+    else{
+        await db().collection('user').updateOne({ username: username }, {
+            $set: {
+                name: user.name,
+                surname: user.surname,
+                phoneNumber: user.phoneNumber,
+                province: user.province,
+                district: user.district,
+                street: user.street
+            }
+        })
+    }
 }
