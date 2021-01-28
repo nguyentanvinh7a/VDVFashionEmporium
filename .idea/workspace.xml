@@ -22,20 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Cập nhật thông tin cá nhân của tài khoản">
-      <change afterPath="$PROJECT_DIR$/public/images/avatar/upload_04e4ac0a43a53173b847e8d8b06e871e.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/avatar/upload_404a114596c29b8133f5a8e4bc154680.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/avatar/upload_41847b61e42cbf4ff00d2cfc7943f618.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/avatar/upload_58beeb037c0aca392da61c9accdcce7a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/avatar/upload_965c6d524133c41602f1ec092e654926.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/avatar/upload_a5e90c43642ca3a533a2c0531bb809ed.jpg" afterDir="false" />
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Upload avatar for user">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/mongoModels/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/mongoModels/userModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/user.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,9 +100,6 @@
       <method v="2" />
     </configuration>
     <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="www" working-dir="$PROJECT_DIR$/bin">
-      <envs>
-        <env name="CLOUDINARY_URL" value="cloudinary://523151583798143:VrF_ooPKNUzOjl6JxZEv-jFSAcg@ho-chi-minh-city-university-of-science-vietnam-national-university" />
-      </envs>
       <method v="2" />
     </configuration>
     <list>
@@ -198,7 +185,7 @@
       <workItem from="1611721965723" duration="26000" />
       <workItem from="1611722047841" duration="3924000" />
       <workItem from="1611748360667" duration="7071000" />
-      <workItem from="1611802576245" duration="8789000" />
+      <workItem from="1611802576245" duration="9981000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -382,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610151703558</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Upload avatar for user">
+      <created>1611814870580</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1611814870580</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +420,8 @@
     <MESSAGE value="Update number of product for shopping cart" />
     <MESSAGE value="Kiểm tra các ràng buộc về tên đăng nhập, mật khẩu nhập lại,..." />
     <MESSAGE value="Cập nhật thông tin cá nhân của tài khoản" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cập nhật thông tin cá nhân của tài khoản" />
+    <MESSAGE value="Upload avatar for user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload avatar for user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -443,7 +438,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controllers/userController.js</url>
-          <line>57</line>
+          <line>62</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="38" />
         </line-breakpoint>

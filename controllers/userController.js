@@ -2,6 +2,11 @@ const formidable = require('formidable');
 const fs = require('fs');
 const sharp = require('sharp');
 const cloudinary = require('cloudinary').v2;
+cloudinary.config({
+    cloud_name: 'ho-chi-minh-city-university-of-science-vietnam-national-university',
+    api_key: '523151583798143',
+    api_secret: 'VrF_ooPKNUzOjl6JxZEv-jFSAcg'
+});
 
 const userService = require("../models/userService");
 const userModel = require("../models/mongoModels/userModel")
