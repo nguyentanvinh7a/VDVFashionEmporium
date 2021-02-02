@@ -61,11 +61,15 @@ exports.editUser = (req, res, next) => {
             return;
         }
         const avatar = files.avatar;
+        const avatarCutPath = avatar.path + 'cut';
         if(avatar && avatar.size > 0) {
-            cloudinary.uploader.upload(avatar.path, (error, result ) => {
-                fields.avatar = result.secure_url;
-            })
-                .then(() => {userModel.edit(req.user.username, fields).then(res.redirect('/user/'))})
+            this.deleteOldAvatar(req, res, next);
+                sharp(avatar.path)
+                    .resize(200, 200)
+                    .toFile(avatarCutPath).then(() => {
+                    cloudinary.uploader.upload(avatarCutPath, (error, result ) => {fields.avatar = result.secure_url;})
+                        .then(() => {userModel.edit(req.user.username, fields)
+                            .then(res.redirect('/user/'))})})
         }
         else {
             userModel.edit(req.user.username, fields).then(() => {
@@ -73,4 +77,13 @@ exports.editUser = (req, res, next) => {
             });
         }
     });
+}
+
+exports.deleteOldAvatar = async (req, res, next) => {
+    const user = await userModel.getUserByUsername(req.user.username);
+    const oldAvatar = user.avatar;
+    if(oldAvatar){
+    let publicIdOldAvatar = oldAvatar.split('.')[2].split('/')[5];
+    await cloudinary.uploader.destroy(publicIdOldAvatar);
+    }
 }
