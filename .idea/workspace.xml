@@ -22,12 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Fix upload avatar">
-      <change afterPath="$PROJECT_DIR$/public/images/hoadao.png" afterDir="false" />
+    <list default="true" id="6289a9b0-2aad-4771-b4f0-a194e1c8e00a" name="Default Changelist" comment="Rounded avatar, delete old avatar, Tet theme">
+      <change afterPath="$PROJECT_DIR$/controllers/api/userController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +195,11 @@
       <workItem from="1611975621837" duration="930000" />
       <workItem from="1612188190919" duration="6270000" />
       <workItem from="1612269973017" duration="712000" />
-      <workItem from="1612274685916" duration="2139000" />
+      <workItem from="1612274685916" duration="3222000" />
+      <workItem from="1614056226820" duration="17000" />
+      <workItem from="1614056266249" duration="1237000" />
+      <workItem from="1614695927281" duration="24000" />
+      <workItem from="1614695982245" duration="6022000" />
     </task>
     <task id="LOCAL-00001" summary="Thêm đường dẫn chi tiết sp động">
       <created>1605806036095</created>
@@ -391,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611815799209</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Rounded avatar, delete old avatar, Tet theme">
+      <created>1612277474420</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1612277474420</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +424,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Thêm nguồn ảnh vào 2 dấu &quot;&quot;" />
     <MESSAGE value="Update env" />
     <MESSAGE value="Delete nodemoon" />
     <MESSAGE value="Fix favicon 404" />
@@ -436,7 +448,8 @@
     <MESSAGE value="Cập nhật thông tin cá nhân của tài khoản" />
     <MESSAGE value="Upload avatar for user" />
     <MESSAGE value="Fix upload avatar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix upload avatar" />
+    <MESSAGE value="Rounded avatar, delete old avatar, Tet theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rounded avatar, delete old avatar, Tet theme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

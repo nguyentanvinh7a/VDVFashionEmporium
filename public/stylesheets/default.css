@@ -206,3 +206,11 @@ body {
 .labels {
     font-size: 11px
 }
+
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}

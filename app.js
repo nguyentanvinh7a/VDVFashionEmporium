@@ -26,6 +26,7 @@ const logoutRouter = require('./routes/logout');
 const productListRouter = require('./routes/products/list');
 const productDetailRouter = require('./routes/products/detail');
 const cartRouter = require('./routes/cart');
+const userApiRouter = require('./routes/api/user');
 const handlebarhelpers = require('handlebars-helpers')();
 const exphbs = require('express-handlebars');
 
@@ -74,6 +75,8 @@ app.use('/products/detail', productDetailRouter);
 app.use('/register', registerRouter);
 app.use('/logout', logoutRouter);
 app.use('/cart', cartRouter);
+//Api routes
+app.use('/api/user', userApiRouter);
 
 require('./dal/db');
 

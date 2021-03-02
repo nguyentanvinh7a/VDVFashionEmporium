@@ -695,3 +695,15 @@ var snowStorm = (function(window, document) {
     return this;
 
 }(window, document));
+
+function checkUsernameExist(username){
+    // Call server API to check username availability
+    $.getJSON('/api/user/is-exist', {username}, function (data){
+        if(data){
+            $('#username-info').addClass('error').removeClass('success').html('Username is already taken!');
+        }
+        else{
+            $('#username-info').addClass('success').removeClass('error').html('Username is available');
+        }
+    })
+}
