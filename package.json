@@ -28,7 +28,7 @@
     "morgan": "~1.9.1",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "sharp": "^0.27.1",
+    "sharp": "^0.32.1",
     "shortid": "^2.2.16"
   },
   "devDependencies": {},
